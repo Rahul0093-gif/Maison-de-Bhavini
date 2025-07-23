@@ -3,126 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bhavini Bhojani - Costume Designer</title>
+  <title>Bhavini Bhojani - Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
       font-family: 'Montserrat', sans-serif;
     }
     body {
-      background-color: #fefefe;
-      color: #222;
+      background-color: #fff;
+      color: #111;
       line-height: 1.6;
-      padding: 2rem;
     }
     header {
+      background: url('profile.jpg') center/cover no-repeat;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
       text-align: center;
-      margin-bottom: 2rem;
-    }
-    header img {
-      width: 200px;
-      height: auto;
-      border-radius: 100px;
-      margin-bottom: 1rem;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
     header p {
-      color: #555;
+      font-size: 1.3rem;
+    }
+    nav {
+      background: #111;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
     }
     section {
-      margin-bottom: 2rem;
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
     }
     h2 {
+      font-size: 2rem;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #000;
-      display: inline-block;
+      border-left: 5px solid #222;
+      padding-left: 1rem;
     }
-    ul {
-      list-style-type: none;
+    .projects, .ads, .skills, .contact {
+      margin-top: 2rem;
     }
-    li {
-      margin-bottom: 1rem;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
     }
-    .project-table, .project-table th, .project-table td {
-      border: 1px solid #ccc;
-      border-collapse: collapse;
-    }
-    .project-table {
-      width: 100%;
-      margin-top: 1rem;
-    }
-    .project-table th, .project-table td {
-      padding: 0.75rem;
-      text-align: left;
+    .card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 10px;
+      background: #f9f9f9;
     }
     footer {
+      background: #111;
+      color: white;
       text-align: center;
-      font-size: 0.9rem;
-      color: #888;
-      margin-top: 4rem;
+      padding: 1rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="profile.jpg" alt="Bhavini Bhojani">
     <h1>Bhavini Bhojani</h1>
-    <p>Professional Costume Designer</p>
+    <p>Costume Designer & Wardrobe Artist</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>I'm Bhavini Bhojani, a costume designer with experience in film, television, and advertising. With a strong academic background in fashion apparel & design from Bangalore University, I specialize in creating impactful costume designs that bring stories to life.</p>
+    <p>I am a creative and detail-oriented costume designer with experience in films, web series, and commercial ads. I specialize in creating wardrobe looks that enhance character storytelling and visual aesthetics.</p>
   </section>
 
-  <section>
-    <h2>Film & Web Series Projects</h2>
-    <table class="project-table">
-      <tr><th>Title</th><th>Production</th><th>Role</th><th>Platform</th></tr>
-      <tr><td>Mukti</td><td>–</td><td>Costume Designer</td><td>–</td></tr>
-      <tr><td>Wild Wild Punjab</td><td>Luv Films<br>Designer: Yasmin Qureshi</td><td>Intern</td><td>Netflix</td></tr>
-      <tr><td>Amar Prem Ki Prem Kahani</td><td>Hardik Gajjar Films<br>Designer: Irfan Khatri</td><td>2nd Assistant</td><td>Jio Cinema</td></tr>
-      <tr><td>Aakhri Sach</td><td>Nirvikar Films<br>Designer: Kirti Kolwankar & Maria</td><td>2nd Assistant</td><td>Hotstar</td></tr>
-      <tr><td>Rautu Ka Raaz</td><td>Phat Phish Records<br>Designer: Roshni Bose</td><td>2nd Assistant</td><td>Zee Cinema</td></tr>
-      <tr><td>Ahuti (Upcoming)</td><td>AVMA Media<br>Designer: Roshni Bose</td><td>2nd Assistant</td><td>–</td></tr>
-      <tr><td>Suryast (Upcoming)</td><td>AVMA Media<br>Designer: Roshni Bose</td><td>2nd Assistant</td><td>–</td></tr>
-      <tr><td>The Scent of Violet</td><td>Cinema Lucidia<br>Designer: Arun J Chauhan</td><td>Wardrobe Supervisor</td><td>–</td></tr>
-      <tr><td>Real Kashmir</td><td>Yamini Pictures<br>Designer: Fabeha Sultana Khan</td><td>–</td><td>–</td></tr>
-      <tr><td>Shaque (Upcoming)</td><td>Alchemy Productions<br>Designers: Varsha Chandanani & Shilpa Makhija</td><td>2nd Assistant</td><td>–</td></tr>
-      <tr><td>Innocent</td><td>Sphereorigins</td><td>2nd Assistant</td><td>–</td></tr>
-    </table>
+  <section id="projects">
+    <h2>Film & Web Projects</h2>
+    <div class="grid">
+      <div class="card"><strong>Mukti</strong><br>Costume Designer</div>
+      <div class="card"><strong>Wild Wild Punjab</strong><br>Intern, Netflix</div>
+      <div class="card"><strong>Aakhri Sach</strong><br>2nd Assistant, Hotstar</div>
+      <div class="card"><strong>Rautu Ka Raaz</strong><br>2nd Assistant, Zee Cinema</div>
+      <div class="card"><strong>The Scent of Violet</strong><br>Wardrobe Supervisor</div>
+      <div class="card"><strong>Shaque</strong><br>2nd Assistant</div>
+    </div>
   </section>
 
-  <section>
+  <section class="ads">
     <h2>Commercial Ads</h2>
-    <ul>
-      <li>Lifebuoy – Designer: Parul Soni</li>
-      <li>Envy Perfume – Designer: Parul Soni</li>
-      <li>Godrej Interio – Designer: Roshni Bose</li>
-      <li>Hamdard Safi – Green Apple Production</li>
-      <li>NCDEX – Newj Production</li>
-    </ul>
+    <div class="grid">
+      <div class="card">Lifebuoy</div>
+      <div class="card">Envy Perfume</div>
+      <div class="card">Godrej Interio</div>
+      <div class="card">Hamdard Safi</div>
+    </div>
   </section>
 
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Designing, Styling, Trend Research</li>
-      <li>Sourcing, Costume Continuity, Illustration</li>
+      <li>✔️ Designing & Styling</li>
+      <li>✔️ Costume Continuity</li>
+      <li>✔️ Fashion Illustration</li>
+      <li>✔️ Trend Research & Sourcing</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Education</h2>
-    <p>B.Sc. in Fashion Apparel & Design – Bangalore University</p>
-  </section>
-
-  <section>
+  <section id="contact" class="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:bhavinibhojani06@gmail.com">bhavinibhojani06@gmail.com</a></p>
     <p>Phone: +91 63554 82595</p>
@@ -130,7 +138,7 @@
   </section>
 
   <footer>
-    &copy; 2025 Bhavini Bhojani. All rights reserved.
+    &copy; 2025 Bhavini Bhojani. Portfolio Website.
   </footer>
 </body>
 </html>
